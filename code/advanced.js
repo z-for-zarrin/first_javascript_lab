@@ -52,8 +52,16 @@ wales.capital = "Cardiff";
 
 northernIrelandKeys = Object.keys(unitedKingdom.find(country => country.name === "Northern Ireland"));
 
-console.log(northernIrelandKeys);
+// console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
  */
+
+scotland = unitedKingdom.find(country => country.name === "Scotland");
+
+if (scotland.population > wales.population) {
+  console.log("Scotland has a larger population than Wales.");
+} else{
+  console.log("Wales had a larger population than Scotland.");
+}
