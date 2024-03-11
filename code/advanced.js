@@ -33,7 +33,7 @@ unitedKingdom = [
  */
 
 england = unitedKingdom.find(country => country.name === "England");
-england.touristAttractions = ["London Eye", "Stonehenge"]
+england.touristAttractions = ["London Eye", "Stonehenge"];
 
 // console.log(england);
 
@@ -42,17 +42,17 @@ england.touristAttractions = ["London Eye", "Stonehenge"]
  */
 
 wales = unitedKingdom.find(country => country.name === "Wales");
-wales.capital = "Cardiff"
+wales.capital = "Cardiff";
 
-console.log(wales);
+// console.log(wales);
 
 /**
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland
  */
 
-northernIrelandKeys = null;
+northernIrelandKeys = Object.keys(unitedKingdom.find(country => country.name === "Northern Ireland"));
 
-// console.log(northernIrelandKeys);
+console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
