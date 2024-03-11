@@ -27,11 +27,11 @@ const guessWho = function () {
 
 const guess1 = guessWho();
 console.log("guess1: ", guess1);
-
+// Prediction: Liz
 
 const guess2 = `Guess Who is ${firstName}`;
 console.log("guess2: ", guess2);
-
+// Prediction: Donna
 
 // // GUESS 3 ///////////////////
 
