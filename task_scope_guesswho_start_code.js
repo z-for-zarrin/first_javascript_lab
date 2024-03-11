@@ -67,39 +67,40 @@
 
 // // GUESS 4 ///////////////////
 
-let firstName = "Gail";
+// let firstName = "Gail";
 
-if (firstName === "Gail") {
-  let firstName = "Ashley";
-}
+// if (firstName === "Gail") {
+//   let firstName = "Ashley"; // local scope
+// }
 
-const guessWho = function () {
-  return `Guess Who is ${firstName}`;
-};
+// const guessWho = function () {
+//   return `Guess Who is ${firstName}`;
+// };
 
-const finalAnswer = guessWho();
-console.log(finalAnswer);
+// const finalAnswer = guessWho();
+// console.log(finalAnswer);
 // Prediction: Gail
 
 // // GUESS 5 ///////////////////
 
-// const guess = {
-//   hair_colour: "blonde",
-//   eye_colour: "brown",
-//   hat: false,
-//   glasses: false,
-//   firstName: "Jennifer",
-// };
+const guess = {
+  hair_colour: "blonde",
+  eye_colour: "brown",
+  hat: false,
+  glasses: false,
+  firstName: "Jennifer",
+};
 
-// const changeGuess = function () {
-//   guess = {
-//     hair_colour: "blonde",
-//     eye_colour: "blue",
-//     hat: false,
-//     glasses: false,
-//     firstName: "Kyle",
-//   };
-// };
+const changeGuess = function () {
+  guess = {
+    hair_colour: "blonde",
+    eye_colour: "blue",
+    hat: false,
+    glasses: false,
+    firstName: "Kyle",
+  };
+};
 
-// changeGuess();
-// console.log(`Guess Who is ${guess.firstName}`);
+changeGuess();
+console.log(`Guess Who is ${guess.firstName}`);
+// Prediction: error from trying to reassign const variable
